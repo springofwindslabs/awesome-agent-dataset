@@ -4,7 +4,7 @@ Curated inventory of agent / tool-use / SWE / web datasets on the HF Hub, with n
 
 > Auto-generated from [`configs/registry.yaml`](configs/registry.yaml) via `agentds catalog`. Do not edit by hand.
 
-**63 datasets catalogued · 27 wired into the pipeline**
+**66 datasets catalogued · 27 wired into the pipeline**
 
 ## Contents
 - [🛠️ Tool / Function Calling](#tool-function-calling)
@@ -36,6 +36,9 @@ Curated inventory of agent / tool-use / SWE / web datasets on the HF Hub, with n
 | [`nvidia/Nemotron-SFT-Agentic-v2`](https://huggingface.co/datasets/nvidia/Nemotron-SFT-Agentic-v2) | 992k | — | cc-by-4.0 | openai_messages | 📋 listed | in the gemma4-agent-sft reference; tool-calling SFT main |
 | [`nvidia/When2Call`](https://huggingface.co/datasets/nvidia/When2Call) | 9k | — | cc-by-4.0 | openai_messages | 📋 listed | train_pref DPO pairs (when-not-to-call) |
 | [`Salesforce/xlam-function-calling-60k`](https://huggingface.co/datasets/Salesforce/xlam-function-calling-60k) | 60k | — | cc-by-4.0 | xlam_query_answers | 📋 listed | canonical xLAM; GATED — needs HF license + token |
+| [`springofwindslabs/function-calling-en-trial`](https://huggingface.co/datasets/springofwindslabs/function-calling-en-trial) | 50 | — | apache-2.0 | sharegpt | 📋 listed | English function-calling, strict schema-validated JSONL; free 50-row eval subset |
+| [`springofwindslabs/function-calling-ja-trial`](https://huggingface.co/datasets/springofwindslabs/function-calling-ja-trial) | 50 | — | apache-2.0 | sharegpt | 📋 listed | Japanese function-calling (high-context tool routing); free 50-row eval subset |
+| [`springofwindslabs/mcp-agent-trajectory-benchmark`](https://huggingface.co/datasets/springofwindslabs/mcp-agent-trajectory-benchmark) | 50 | — | apache-2.0 | sharegpt | 📋 listed | MCP tool-use trajectories w/ error recovery (403/429/locks); free 50-row eval subset |
 | [`stabletoolbench/ToolEnv2404`](https://huggingface.co/datasets/stabletoolbench/ToolEnv2404) | — | — | apache-2.0 | other | 📋 listed | StableToolBench tool environment |
 
 ## 🧵 Agent Traces (real coding-agent sessions)
@@ -137,6 +140,7 @@ Sources sharing a `dedup_group` are deduplicated together (and against the publi
 | `openthoughts_agent` | c_ot_agent_rl, c_ot_agent_sft, c_ot_coldstart |
 | `scalecua` | c_scalecua |
 | `smoltalk2` | c_smoltalk, smoltalk2 |
+| `springofwinds` | c_sow_fc_en_trial, c_sow_fc_ja_trial, c_sow_mcp_trial |
 | `swe_openhands` | c_r2egym, c_swefixer, c_swegym, c_swegym_raw, c_swegym_verifier, c_swehero, c_swezero12m, coderforge, swe_gym, swe_rebench, swe_smith, swe_zero |
 | `taubench` | c_apigen_tau, c_taubench_synth |
 | `toolace` | toolace |

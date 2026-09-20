@@ -413,6 +413,9 @@ sources:
   - {key: c_when2call_pref, hf_id: nvidia/When2Call, tier: function_calling, dedup_group: when2call, enabled: false, license: cc-by-4.0, rows: "9k", format: openai_messages, notes: "train_pref DPO pairs (when-not-to-call)"}
   - {key: c_nemotron_v2, hf_id: nvidia/Nemotron-SFT-Agentic-v2, tier: function_calling, dedup_group: nemotron, enabled: false, license: cc-by-4.0, rows: "992k", format: openai_messages, notes: "in the gemma4-agent-sft reference; tool-calling SFT main"}
   - {key: c_nemotron_v1, hf_id: nvidia/Nemotron-Agentic-v1, tier: function_calling, dedup_group: nemotron, enabled: false, license: cc-by-4.0, rows: "335k", format: openai_messages, notes: "interactive agent + tool calling"}
+  - {key: c_sow_mcp_trial, hf_id: springofwindslabs/mcp-agent-trajectory-benchmark, tier: function_calling, dedup_group: springofwinds, enabled: false, license: apache-2.0, rows: "50", format: sharegpt, notes: "MCP tool-use trajectories w/ error recovery (403/429/locks); free 50-row eval subset"}
+  - {key: c_sow_fc_en_trial, hf_id: springofwindslabs/function-calling-en-trial, tier: function_calling, dedup_group: springofwinds, enabled: false, license: apache-2.0, rows: "50", format: sharegpt, notes: "English function-calling, strict schema-validated JSONL; free 50-row eval subset"}
+  - {key: c_sow_fc_ja_trial, hf_id: springofwindslabs/function-calling-ja-trial, tier: function_calling, dedup_group: springofwinds, enabled: false, license: apache-2.0, rows: "50", format: sharegpt, notes: "Japanese function-calling (high-context tool routing); free 50-row eval subset"}
 
   # ---- core agent trajectory corpora ---- #
   - {key: c_agenttrove, hf_id: open-thoughts/AgentTrove, tier: core, dedup_group: agenttrove, enabled: false, license: apache-2.0, rows: "1.70M", format: openai_messages, notes: "in gemma4-agent-sft reference; 219-source agent trajectory pool"}
